@@ -19,6 +19,8 @@ Change the driver of the Razer Device (Interface 2 on my Blade 2018 Advanced) to
 
 Then simply download the source and compile yourself, or grab a precompiled release (![link](https://github.com/lpcvoid/knife/releases/download/1.0/knifegui_1.0.zip)). The zip contains two files (and exe and a dll), unpack both into the same directory. Run the exe. Done. Does not need any administrator privileges.
 
+Please be advised that you need to revert this process for Synapse to work again. Simply uninstall the Razer device in device manager, and tick the "Remove driver software" box when doing so.
+
 # Credits
 This project stands on the shoulder of giants. I want to thank Openrazer for the initial idea, and a chap named @rsandoz for a lot of the headway into making Openrazer work on windows. I just hacked together both of their approaches into an easy to use DLL and GUI which runs on windows.
 
