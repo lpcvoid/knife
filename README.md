@@ -1,9 +1,9 @@
 # Knife
 An open source, lightweight and no bullshit customization software for your Razer Blade.
 
-![Screenshot of Knife](https://i.imgur.com/qdmHs4P.png)
+![Screenshot of Knife](https://i.imgur.com/s0KYbzD.png)
 
-Currently only works on Razer Blade 2018 Advanced. Support for other blade models is trivial though, and will come around soon.
+Should work on every Blade laptop currently avaliable. You can also add support for other Razer keyboards via the devices.csv file.
 
 # Why?
 I love my Blade, but I hate Synapse. Bloated, needs Internet access, and looks like something a 13 year old would design, in my opinion. Knife aims to be something that your grandpa would design - small, gets the job done and out of your face afterwards.
