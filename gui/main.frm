@@ -1,23 +1,24 @@
 object formMain: TformMain
-  Left = 1373
+  Left = 434
   Height = 369
-  Top = 485
-  Width = 558
+  Top = -2069
+  Width = 615
   Caption = 'KnifeGui - Control your Blade'
   ClientHeight = 369
-  ClientWidth = 558
+  ClientWidth = 615
   OnCreate = FormCreate
   OnWindowStateChange = FormWindowStateChange
+  Position = poDesktopCenter
   LCLVersion = '6.8'
   object grpbxColor: TGroupBox
     Left = 128
     Height = 319
     Top = 0
-    Width = 430
+    Width = 487
     Align = alClient
     Caption = 'Effect color'
     ClientHeight = 299
-    ClientWidth = 426
+    ClientWidth = 483
     TabOrder = 0
     object selectedColorPanel: TplColorPanel
       Left = 8
@@ -39,30 +40,31 @@ object formMain: TformMain
       Left = 8
       Height = 262
       Top = 0
-      Width = 414
+      Width = 471
       Anchors = [akTop, akLeft, akRight, akBottom]
       BevelOuter = bvNone
       ClientHeight = 262
-      ClientWidth = 414
+      ClientWidth = 471
       TabOrder = 1
       OnClick = panelColorselectorClick
       object colorPicker: THSColorPicker
         Left = 0
         Height = 262
         Top = 0
-        Width = 414
-        SelectedColor = 460777
+        Width = 471
+        SelectedColor = 460792
         HintFormat = 'H: %h S: %hslS'#13'Hex: %hex'
         Align = alClient
         TabOrder = 0
         Color = clBlack
         ParentColor = False
         OnMouseUp = colorPickerMouseUp
+        SaturationValue = 227
         OnChange = colorPickerChange
       end
     end
     object colPanelGreen: TplColorPanel
-      Left = 367
+      Left = 424
       Height = 25
       Top = 268
       Width = 25
@@ -77,7 +79,7 @@ object formMain: TformMain
       OnClick = colPanelGreenClick
     end
     object colPanelRed: TplColorPanel
-      Left = 337
+      Left = 394
       Height = 25
       Top = 268
       Width = 25
@@ -92,7 +94,7 @@ object formMain: TformMain
       OnClick = colPanelRedClick
     end
     object colPanelBlue: TplColorPanel
-      Left = 397
+      Left = 454
       Height = 25
       Top = 268
       Width = 25
@@ -170,6 +172,7 @@ object formMain: TformMain
         Value = 1
         Align = alClient
         TabOrder = 0
+        OnChange = sliderSpeedChange
       end
     end
     object grpbxBrightness: TGroupBox
@@ -204,17 +207,17 @@ object formMain: TformMain
     Left = 0
     Height = 50
     Top = 319
-    Width = 558
+    Width = 615
     Align = alBottom
     BevelOuter = bvNone
     ClientHeight = 50
-    ClientWidth = 558
+    ClientWidth = 615
     TabOrder = 2
     object chkgrpSettings: TCheckGroup
       Left = 0
       Height = 50
       Top = 0
-      Width = 456
+      Width = 408
       Align = alLeft
       AutoFill = True
       Caption = 'Settings'
@@ -227,10 +230,10 @@ object formMain: TformMain
       ChildSizing.Layout = cclLeftToRightThenTopToBottom
       ChildSizing.ControlsPerLine = 3
       ClientHeight = 30
-      ClientWidth = 452
+      ClientWidth = 404
       Columns = 3
       Items.Strings = (
-        'Start Knife minimized'
+        'Start minimized'
         'Minimize to Systray'
         'Autostart with Windows'
       )
@@ -240,12 +243,13 @@ object formMain: TformMain
         03000000020202
       }
     end
-    object KLinkLabel1: TKLinkLabel
+    object linkLabelProject: TKLinkLabel
       Cursor = crHandPoint
-      Left = 459
+      Left = 518
       Height = 15
-      Top = 33
+      Top = 35
       Width = 91
+      Anchors = [akRight, akBottom]
       Caption = 'Visit project page'
       Font.Color = clBlue
       ParentColor = False
@@ -254,6 +258,26 @@ object formMain: TformMain
       ShowHint = True
       ShowURLAsHint = True
       URL = 'https://github.com/lpcvoid/knife'
+    end
+    object cmbbxKnownDevices: TComboBox
+      Left = 416
+      Height = 23
+      Top = 8
+      Width = 193
+      Anchors = [akTop, akLeft, akRight]
+      ItemHeight = 15
+      OnChange = cmbbxKnownDevicesChange
+      Style = csDropDownList
+      TabOrder = 1
+    end
+    object Label1: TLabel
+      Left = 416
+      Height = 15
+      Top = 35
+      Width = 56
+      Anchors = [akLeft, akBottom]
+      Caption = 'Version 1.1'
+      ParentColor = False
     end
   end
   object ColorDialog: TColorDialog
@@ -422,7 +446,9 @@ object formMain: TformMain
       F013FFFFF00BFFFFF80BFFFFFC01FFFFFE01FFFFFF01FFFFFFE1FFFFFFF9FFFF
       FFFF
     }
+    Hint = 'Knife'
     OnClick = TrayIconClick
+    OnDblClick = TrayIconDblClick
     Left = 360
     Top = 32
   end

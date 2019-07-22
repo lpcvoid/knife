@@ -1,0 +1,13 @@
+#This is a list of supported devices.
+#It consists of Name, VID and PID, semicolon delimited.
+#Changes to this file require a Knife restart.
+
+
+Blade 15 Advanced (2018);0x1532;0x233
+Blade 15 Base (2018);0x1532;0x23B
+Blade 15 Mercury (2018);0x1532;0x240
+Blade 15 Advanced (2019);0x1532;0x23A
+Blade mid 2019 Mercury;0x1532;0x245
+Blade QHD;0x1532;0x020F
+Blade Pro late 2016;0x1532;0x210
+
