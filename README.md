@@ -1,12 +1,12 @@
 # Knife
-An open source, lightweight and no bullshit customization software for your Razer Blade.
+An open source, lightweight customization software for your Razer Blade.
 
 ![Screenshot of Knife](https://i.imgur.com/s0KYbzD.png)
 
 Should work on every Blade laptop currently avaliable. You can also add support for other Razer keyboards via the devices.csv file.
 
 # Why?
-I love my Blade, but I hate Synapse. Bloated, needs Internet access, and looks like something a 13 year old would design, in my opinion. Knife aims to be something that your grandpa would design - small, gets the job done and out of your face afterwards.
+I love my Blade, but I dislike Synapse. Bloated, needs Internet access, and looks like something a 13 year old would design, in my opinion. Knife aims to be something that your grandpa would design - small, gets the job done and out of your face afterwards.
 
 Knife uses 4.4MB RAM when running, and no visible levels of CPU.
 
