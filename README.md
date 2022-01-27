@@ -1,3 +1,7 @@
+# Abandoned software!
+
+I don't use Windows anymore, nor do I own the laptop this was developed for anymore. Please fork if you wish to continue development :)
+
 # Knife
 An open source, lightweight customization software for your Razer Blade.
 
